@@ -7,30 +7,33 @@ import Partners from "./components/Partners";
 import Gallery from "./components/Gallery";
 import Partnership from "./components/Partnership";
 import Footer from "./components/Footer";
+import MyBook from "./components/MyBook";
 import Box from "@mui/material/Box";
+import Countdown from "./components/Countdown";
 
 function App() {
   return (
     <>
-      <Nav />
-      <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
-        <Top />
+      <Top />
+      <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh', mt: 3, maxWidth: '100vw' }}><MyBook />
       </Box>
-      <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
-      </Box>
-      <Box sx={{ minHeight: '100vh' }}>
+      <Box sx={{ minHeight: '100vh', mt: 10, maxWidth: '100vw' }}>
         <About />
       </Box>
-      <Box sx={{ minHeight: '100vh' }}>
+      <Box sx={{ mt: 10, pb: 10, maxWidth: '100vw' }}>
         <Partners />
       </Box>
-      <Box sx={{ minHeight: '100vh' }}>
+      <Box sx={{ maxWidth: '100vw' }}>
         <Gallery />
       </Box>
-      <Box sx={{ minHeight: '100vh', maxWidth: '100vw' }}>
+      <Box sx={{ maxWidth: '100vw', mt: 5 }}>
         <Partnership />
       </Box>
-      <Footer />
+      <Box sx={{ maxWidth: '100vw' }}>
+        <Footer />
+      </Box>
+      <Nav />
+      <Countdown />
     </>
   );
 }

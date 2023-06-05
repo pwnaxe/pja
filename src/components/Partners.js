@@ -1,18 +1,19 @@
 import React from 'react';
-import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import Tlo from '../assets/page/partners.webp';
+import LogoSwiper from './LogoSwiper';
 
 function Partners() {
   return (
     <>
-      <Box component="img" src={Tlo} alt="Tlo" />
-      <Typography variant="h2" sx={{ fontWeight: 'bold' }}>
+      <Typography variant="h3" sx={{
+        fontWeight: 'bold', textAlign: 'center'
+      }}>
         Wystawcy
       </Typography>
-      <Typography sx={{ fontSize: '1.2rem' }}>
+      <Typography sx={{ fontSize: '1.2rem', textAlign: 'center' }}>
         Uczestnicy wiosennej edycji
       </Typography>
+      <LogoSwiper />
     </>
   );
 };

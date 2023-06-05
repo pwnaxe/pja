@@ -25,19 +25,19 @@ function Nav() {
 
   return (
     <AppBar
-      position="sticky"
+      position="fixed"
       sx={{
-        maxWidth: 700,
-        marginRight: -1,
+        maxWidth: '100%',
         marginLeft: 'auto',
         display: 'flex',
         bgcolor: '#5E5E5E',
         height: '5vh',
         justifyContent: 'center',
         alignItems: 'center',
-        mt: -1,
+        mt: 0,
         elevation: 0,
         boxShadow: 'none',
+        top: 0,
       }}
     >
       <Container maxWidth="xl">
@@ -45,7 +45,6 @@ function Nav() {
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
-              aria-label="account of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
@@ -69,6 +68,7 @@ function Nav() {
               onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: 'block', md: 'none' },
+                width: '100%',
               }}
             >
               {pages.map((page) => (
