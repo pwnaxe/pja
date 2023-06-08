@@ -1,16 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import HTMLFlipBook from "react-pageflip";
-import { useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-import coverImage from '../assets/images/cover.png';
-import backCoverImage from '../assets/images/coverback.png';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 const Page = React.forwardRef((props, ref) => {
   return (
-    <div className="demoPage" ref={ref}>
-      <h1>Page Header</h1>
-      <p>{props.children}</p>
-      <p>Page number: {props.number}</p>
+    <div
+      className="demoPage"
+      ref={ref}
+    >
+      <img
+        src={props.image}
+        alt={`Page ${props.number}`}
+        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+      />
     </div>
   );
 });
@@ -20,53 +23,39 @@ const Cover = React.forwardRef((props, ref) => {
     <div
       className="cover"
       ref={ref}
-      style={{
-        backgroundImage: `url(${props.image})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
-    />
+    >
+      <img
+        src={props.image}
+        alt={props.title}
+        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+      />
+    </div>
   );
 });
 
 function MyBook(props) {
   const theme = useTheme();
-  const matchesXS = useMediaQuery(theme.breakpoints.down('xs'));
-  const matchesSM = useMediaQuery(theme.breakpoints.only('sm'));
-
-  const [singlePage, setSinglePage] = useState(false);
-  const [dimensions, setDimensions] = useState({ width: 500, height: 700 });
-
-  useEffect(() => {
-    if (matchesXS) {
-      setSinglePage(true);
-      setDimensions({ width: 300, height: 400 });
-    } else if (matchesSM) {
-      setSinglePage(true);
-      setDimensions({ width: 400, height: 500 });
-    } else {
-      setSinglePage(false);
-      setDimensions({ width: 500, height: 700 });
-    }
-  }, [matchesXS, matchesSM]);
+  const matches = useMediaQuery(theme.breakpoints.up('md')); // 'md' and above is considered as large screen
 
   return (
     <HTMLFlipBook
-      width={dimensions.width}
-      height={dimensions.height}
-      size="fixed"
+      width='500'
+      height='700'
+      size={matches ? "fixed" : "stretch"}
+      minWidth={315}
+      maxWidth={1000}
+      minHeight={400}
+      maxHeight={1533}
       maxShadowOpacity={0.5}
-      showCover={singlePage ? false : true}
-      usePortrait={singlePage}
+      showCover={true}
       mobileScrollSupport={true}
       className="demo-book">
-      <Cover title="My Awesome Book" image={coverImage}></Cover>
-      <Page number="1">Page text</Page>
-      <Page number="2">Page text</Page>
-      <Page number="3">Page text</Page>
-      <Page number="4">Page text</Page>
-      <Cover title="My Awesome Book" image={backCoverImage}></Cover>
+      <Cover title="My Awesome Book" image={process.env.PUBLIC_URL + "/assets/images/cover.png"} />
+      <Page number="1" image={process.env.PUBLIC_URL + "/assets/images/orange 1.png"} />
+      <Page number="2" image={process.env.PUBLIC_URL + "/assets/images/orange 2.png"} />
+      <Page number="3" image={process.env.PUBLIC_URL + "/assets/images/orange 1.png"} />
+      <Page number="4" image={process.env.PUBLIC_URL + "/assets/images/orange 2.png"} />
+      <Cover title="My Awesome Book" image={process.env.PUBLIC_URL + "/assets/images/coverback.png"} />
     </HTMLFlipBook >
   );
 }

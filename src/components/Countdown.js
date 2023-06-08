@@ -9,7 +9,7 @@ const CountdownPopup = () => {
   const [open, setOpen] = useState(true);
 
   const handleClose = () => {
-    setOpen(true);
+    setOpen(false);
   };
 
   return (
