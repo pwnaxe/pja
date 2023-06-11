@@ -3,14 +3,20 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 
-const pages = ['O wydarzeniu', 'Agenda', 'Wystawcy', 'Galeria', 'Dla Pracodawcy', 'Kontakt'];
+const pages = [
+  { title: 'O wydarzeniu', id: 'o-wydarzeniu' },
+  { title: 'Agenda', id: 'agenda' },
+  { title: 'Wystawcy', id: 'wystawcy' },
+  { title: 'Galeria', id: 'galeria' },
+  { title: 'Dla Pracodawcy', id: 'dla-pracodawcy' },
+  { title: 'Kontakt', id: 'kontakt' },
+];
 
 function Nav() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -21,6 +27,14 @@ function Nav() {
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
+  };
+
+  const handleNavigation = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const offsetTop = element.offsetTop - 100; // 100 pixels higher
+      window.scroll({ top: offsetTop, behavior: 'smooth' });
+    }
   };
 
   return (
@@ -72,8 +86,8 @@ function Nav() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center" sx={{ fontSize: '1rem' }}>{page}</Typography>
+                <MenuItem key={page.id} onClick={() => handleNavigation(page.id)}>
+                  {page.title}
                 </MenuItem>
               ))}
             </Menu>
@@ -81,11 +95,11 @@ function Nav() {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center' }}>
             {pages.map((page) => (
               <Button
-                key={page}
-                onClick={handleCloseNavMenu}
+                key={page.id}
+                onClick={() => handleNavigation(page.id)}
                 sx={{ my: 2, color: 'white', display: 'block', fontSize: '0.8rem' }}
               >
-                {page}
+                {page.title}
               </Button>
             ))}
           </Box>
@@ -94,4 +108,5 @@ function Nav() {
     </AppBar >
   );
 }
+
 export default Nav;

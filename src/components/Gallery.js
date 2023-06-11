@@ -7,24 +7,24 @@ import 'swiper/css/pagination';
 import Typography from '@mui/material/Typography';
 
 const images = [
-  './Assets/images/IMG_20221020_095239.webp',
-  './Assets/images/IMG_20221020_095252.webp',
-  './Assets/images/IMG_20221020_095305.webp',
-  './Assets/images/IMG_20221020_095329.webp',
-  './Assets/images/IMG_20221020_100109.webp',
-  './Assets/images/IMG_20221020_104332.webp',
-  './Assets/images/IMG_20221020_111020.webp',
-  './Assets/images/IMG_20221020_111204.webp',
-  './Assets/images/IMG_20221020_111626.webp',
-  './Assets/images/IMG_20221020_111705.webp',
-  './Assets/images/IMG_20221020_112147.webp',
-  './Assets/images/IMG_20221020_153644.webp'
+  process.env.PUBLIC_URL + '/Assets/images/IMG_20221020_095239.webp',
+  process.env.PUBLIC_URL + '/Assets/images/IMG_20221020_095252.webp',
+  process.env.PUBLIC_URL + '/Assets/images/IMG_20221020_095305.webp',
+  process.env.PUBLIC_URL + '/Assets/images/IMG_20221020_095329.webp',
+  process.env.PUBLIC_URL + '/Assets/images/IMG_20221020_100109.webp',
+  process.env.PUBLIC_URL + '/Assets/images/IMG_20221020_104332.webp',
+  process.env.PUBLIC_URL + '/Assets/images/IMG_20221020_111020.webp',
+  process.env.PUBLIC_URL + '/Assets/images/IMG_20221020_111204.webp',
+  process.env.PUBLIC_URL + '/Assets/images/IMG_20221020_111626.webp',
+  process.env.PUBLIC_URL + '/Assets/images/IMG_20221020_111705.webp',
+  process.env.PUBLIC_URL + '/Assets/images/IMG_20221020_112147.webp',
+  process.env.PUBLIC_URL + '/Assets/images/IMG_20221020_153644.webp'
 ];
 
 function Gallery() {
   return (
     <>
-      <Typography variant="h3" sx={{ fontWeight: 'bold', textAlign: 'center', ml: "auto", mr: "auto", mb: 2, mt: 5, }}>
+      <Typography id="galeria" variant="h3" sx={{ fontWeight: 'bold', textAlign: 'center', ml: "auto", mr: "auto", mb: 2, mt: 5, }}>
         Galeria
       </Typography>
       <div id="gallery">

@@ -31,14 +31,14 @@ const Footer = () => (
         minHeight: 400,
       }}
     >
-      <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
+      <Typography variant="h4" sx={{ fontSize: '1.9rem', fontWeight: 'bold' }}>
         Kontakt
       </Typography>
-      <Typography sx={{ fontSize: '1.55rem', }}>
+      <Typography sx={{ fontSize: '1.25rem', }}>
         biurokarier@pja.edu.pl <br />
         telefon 22 584 45 88
       </Typography>
-      <Typography sx={{ fontSize: '1.55rem', fontWeight: 'bold', mt: 5, }}>
+      <Typography sx={{ fontSize: '1.20rem', fontWeight: 'bold', mt: 5, }}>
         DORADCZYNI ZAWODOWA <br />
         Marta Mulik <br />
         mmulik@pja.edu.pl
@@ -57,7 +57,7 @@ const Footer = () => (
         flexWrap: 'wrap'
       }}
     >
-      <img src="./Assets/page/pjatk2.webp" alt="Logo" />
+      <img src="./Assets/logos/pjatk2.webp" alt="Logo" />
       <Box
         sx={{
           display: 'flex',

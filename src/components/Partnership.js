@@ -8,7 +8,7 @@ import Grid from '@mui/material/Grid';
 
 function Partnership() {
   return (
-    <Box
+    <Box id="dla-pracodawcy"
       sx={{
         display: 'flex',
         flexDirection: 'column',
@@ -38,7 +38,7 @@ function Partnership() {
           </Typography>
         </Grid>
         <Grid item xs={12} md={6} container alignItems="center" justifyContent="center">
-          <Button
+          <Button id="kontakt"
             variant="contained"
             endIcon={<SendIcon />}
             sx={{ backgroundColor: '#ffe200', color: 'black', borderRadius: '20px' }}

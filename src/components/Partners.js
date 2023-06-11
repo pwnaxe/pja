@@ -5,7 +5,7 @@ import LogoSwiper from './LogoSwiper';
 function Partners() {
   return (
     <>
-      <Typography variant="h3" sx={{
+      <Typography id="wystawcy" variant="h3" sx={{
         fontWeight: 'bold', textAlign: 'center'
       }}>
         Wystawcy

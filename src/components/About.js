@@ -15,7 +15,7 @@ function About() {
           </Box>
         </Grid>
         <Grid item xs={12} md={6}>
-          <Box sx={{ mt: 3, mr: { xs: 2, md: 15 }, ml: 2, textAlign: { xs: 'center', md: 'left' } }}>
+          <Box id="o-wydarzeniu" sx={{ mt: 3, mr: { xs: 2, md: 15 }, ml: 2, textAlign: { xs: 'center', md: 'left' } }}>
             <Typography variant="h4" component="h4" gutterBottom >
               O wydarzeniu
             </Typography>
@@ -32,7 +32,7 @@ function About() {
 
       <Grid container spacing={5} sx={{ mt: 10 }}>
         <Grid item xs={12} md={6}>
-          <Box sx={{ ml: { xs: 2, md: 15 }, mr: 5, mt: 2, textAlign: { xs: 'center', md: 'left' } }}>
+          <Box id="agenda" sx={{ ml: { xs: 2, md: 15 }, mr: 5, mt: 2, textAlign: { xs: 'center', md: 'left' } }}>
             <Typography variant="h4" component="h4" gutterBottom>
               Co czeka na Was na wiosennej edycji Targów?
             </Typography>
