@@ -51,27 +51,25 @@ function MyBook(props) {
       showCover={true}
       mobileScrollSupport={true}
       className="demo-book">
-      <Cover title="Front Cover" image={process.env.PUBLIC_URL + "/assets/book/cover.png"} />
-      <Page number={1} />
-      <Page number={2} image={process.env.PUBLIC_URL + "/assets/book/bec5.png"} />
-      <Page number={3} image={process.env.PUBLIC_URL + "/assets/book/bec6.png"} />
-      <Page number={4} image={process.env.PUBLIC_URL + "/assets/book/bec7.png"} />
-      <Page number={5} image={process.env.PUBLIC_URL + "/assets/book/asse13.png"} />
-      <Page number={6} image={process.env.PUBLIC_URL + "/assets/book/asse14.png"} />
-      <Page number={7} image={process.env.PUBLIC_URL + "/assets/book/epam3.png"} />
-      <Page number={8} image={process.env.PUBLIC_URL + "/assets/book/epam4.png"} />
-      <Page number={9} image={process.env.PUBLIC_URL + "/assets/book/ex15.png"} />
-      <Page number={10} image={process.env.PUBLIC_URL + "/assets/book/ex16.png"} />
-      <Page number={11} image={process.env.PUBLIC_URL + "/assets/book/hays10.png"} />
-      <Page number={12} image={process.env.PUBLIC_URL + "/assets/book/hays11.png"} />
-      <Page number={13} image={process.env.PUBLIC_URL + "/assets/book/hays12.png"} />
-      <Page number={14} image={process.env.PUBLIC_URL + "/assets/book/net17.png"} />
-      <Page number={15} image={process.env.PUBLIC_URL + "/assets/book/net18.png"} />
-      <Page number={16} image={process.env.PUBLIC_URL + "/assets/book/orange1.png"} />
-      <Page number={17} image={process.env.PUBLIC_URL + "/assets/book/orange2.png"} />
-      <Page number={18} image={process.env.PUBLIC_URL + "/assets/book/P_G8.png"} />
-      <Page number={19} image={process.env.PUBLIC_URL + "/assets/book/P_G9.png"} />
-      <Cover title="Back Cover" image={process.env.PUBLIC_URL + "/assets/book/coverback.png"} />
+      <Cover title="Front Cover" image={process.env.PUBLIC_URL + "/assets/book/okładka.png"} />
+      <Page number={3} image={process.env.PUBLIC_URL + "/assets/book/2.png"} />
+      <Page number={4} image={process.env.PUBLIC_URL + "/assets/book/3.png"} />
+      <Page number={5} image={process.env.PUBLIC_URL + "/assets/book/4.png"} />
+      <Page number={6} image={process.env.PUBLIC_URL + "/assets/book/5.png"} />
+      <Page number={7} image={process.env.PUBLIC_URL + "/assets/book/6.png"} />
+      <Page number={8} image={process.env.PUBLIC_URL + "/assets/book/7.png"} />
+      <Page number={9} image={process.env.PUBLIC_URL + "/assets/book/8.png"} />
+      <Page number={10} image={process.env.PUBLIC_URL + "/assets/book/9.png"} />
+      <Page number={11} image={process.env.PUBLIC_URL + "/assets/book/10.png"} />
+      <Page number={14} image={process.env.PUBLIC_URL + "/assets/book/13.png"} />
+      <Page number={15} image={process.env.PUBLIC_URL + "/assets/book/14.png"} />
+      <Page number={16} image={process.env.PUBLIC_URL + "/assets/book/15.png"} />
+      <Page number={17} image={process.env.PUBLIC_URL + "/assets/book/16.png"} />
+      <Page number={18} image={process.env.PUBLIC_URL + "/assets/book/17.png"} />
+      <Page number={19} image={process.env.PUBLIC_URL + "/assets/book/18.png"} />
+      <Page number={20} image={process.env.PUBLIC_URL + "/assets/book/19.png"} />
+      <Page number={21} image={process.env.PUBLIC_URL + "/assets/book/20.png"} />
+      <Cover title="Back Cover" image={process.env.PUBLIC_URL + "/assets/book/tył_okładki.png"} />
     </HTMLFlipBook >
   );
 }
