@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <Top />
-      <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh', mt: 3, maxWidth: '100vw', backgroundColor: 'gray' }}>
+      <Box sx={{ display: 'flex', justifyContent: 'center', minHeight: '100vh', mt: 3, maxWidth: '100vw', backgroundColor: 'gray', py: 3 }}>
         <MyBook />
       </Box>
       <Box sx={{ minHeight: '100vh', mt: 10, maxWidth: '100vw' }}>
