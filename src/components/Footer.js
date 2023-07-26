@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import Tlo from '../assets/page/footer.webp';
+import Grid from '@mui/material/Grid';
 
 const Footer = () => (
   <Box
@@ -29,6 +30,7 @@ const Footer = () => (
         alignItems: 'center',
         textAlign: 'center',
         minHeight: 400,
+        mb: 5,
       }}
     >
       <Typography variant="h4" sx={{ fontSize: '1.9rem', fontWeight: 'bold' }}>
@@ -38,14 +40,33 @@ const Footer = () => (
         biurokarier@pja.edu.pl <br />
         telefon 22 584 45 88
       </Typography>
-      <Typography sx={{ fontSize: '1.20rem', fontWeight: 'bold', mt: 5, }}>
-        DORADCZYNI ZAWODOWA <br />
-        Marta Mulik <br />
-        mmulik@pja.edu.pl
+      <Typography sx={{ fontSize: '1.25rem', mt: 5, mb: 3 }}>
+        DORADCZYNIE ZAWODOWE
       </Typography>
-    </Box>
+      <Grid container spacing={8} justifyContent="center" alignItems="stretch" sx={{ display: 'flex', }}>
+        <Grid item xs={12} sm={6} md={6}>
+          <Typography sx={{ fontSize: '1.20rem', }}>
+            <strong>Marta Mulik</strong> <br />
+            mmulik@pja.edu.pl
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={6} md={6}>
+          <Typography sx={{ fontSize: '1.20rem', }}>
+            <strong>Marzena Wodnicka</strong> <br />
+            mwodnicka@pja.edu.pl
+          </Typography>
+        </Grid>
+      </Grid>
+      <Typography sx={{ fontSize: '1.20rem', mt: 5, }}>
+        Kierowniczka ABK</Typography>
+      <Typography sx={{ fontSize: '1.20rem', mt: 2 }}> <strong>  Ada Jedlińska </strong><br />
+        ada.jedlinska@pja.edu.pl
+      </Typography>
+    </Box >
+
     <Box
       sx={{
+        mt: 25,
         display: 'flex',
         width: '100%',
         flexDirection: { xs: 'column', md: 'row' },
@@ -90,7 +111,7 @@ const Footer = () => (
         <Link href="https://www.linkedin.com/company/85406761">LI</Link>
       </Box>
     </Box>
-  </Box>
+  </Box >
 );
 
 export default Footer;
