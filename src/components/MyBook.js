@@ -3,6 +3,7 @@ import HTMLFlipBook from "react-pageflip";
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { Typography } from '@mui/material';
+import { Magnifier } from 'solguruz-react-image-magnifier';
 
 const Page = React.forwardRef((props, ref) => {
   return (
@@ -11,10 +12,14 @@ const Page = React.forwardRef((props, ref) => {
       ref={ref}
       style={props.number === 1 ? { backgroundColor: '#f9f9f9', width: '100%', height: '100%' } : {}}
     >
-      {props.image && <img
-        src={props.image}
-        alt={`Page ${props.number}`}
-        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+      {props.image && <Magnifier
+        image={props.image}
+        zoom={2}
+        width="100%"
+        magnifierWidth={150}
+        magnifierHeight={150}
+        borderWidth={2}
+        borderColor="white"
       />}
     </div>
   );
