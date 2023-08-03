@@ -23,21 +23,19 @@ function Partnership() {
         pt: 5,
       }}
     >
-      <Grid container spacing={5} sx={{ pt: 2, pl: { xs: 2, md: 10 }, pr: { xs: 2, }, textAlign: { xs: 'center' } }} >
+      <Grid container spacing={5} sx={{ pt: 2, pl: { xs: 2, md: 10 }, pr: { xs: 2, }, textAlign: { xs: 'left' } }} >
         <Grid item xs={12} md={6}>
-          <Typography variant="h3" sx={{ fontWeight: 'bold', mb: 3 }}>
+          <Typography variant="h3" sx={{ fontWeight: 'bold', mb: 3, ml: { xs: 2, md: 15 }, mr: 5, mt: 2, textAlign: { xs: 'center', md: 'left' } }}>
             Pracodawcy - udział w Targach
           </Typography>
-          <Typography sx={{ fontSize: '1.2rem' }}>
-            Drodzy Pracodawcy, serdecznie zapraszamy do wypełnienia formularza zgłoszeniowego na Targi Pracy PJATK - edycja wiosna 2023.
-            Oferujemy Państwu stoiska 2x2 m2 oraz 2x3 m2 oraz możliwość udziału w wydarzeniach towarzyszących Targom Pracy PJATK.
-            <br /><br />
-            Więcej szczegółów znajdą Państwo w formularzu.
-            <br /><br />
+          <Typography sx={{ fontSize: '1.2rem', ml: { xs: 2, md: 15 }, mr: 5, mt: 2, textAlign: { xs: 'center', md: 'left' } }}>
+            Drodzy Pracodawcy, <br />Serdecznie zapraszamy do wypełnienia formularza zgłoszeniowego na Targi Pracy PJATK - edycja wiosna 2023.<br />
+            Oferujemy Państwu stoiska 2x2 m2 oraz 2x3 m2 oraz możliwość udziału w wydarzeniach towarzyszących Targom Pracy PJATK.<br />
+            Więcej szczegółów znajdą Państwo w formularzu.<br />
             W razie pytań, zapraszamy do kontaktu z biurokarier@pjwstk.edu.pl
           </Typography>
         </Grid>
-        <Grid item xs={12} md={6} container alignItems="center" justifyContent="center">
+        <Grid item xs={12} md={6} container alignItems="center" justifyContent="center" sx={{ pr: { xl: 15, } }}>
           <Button id="kontakt"
             variant="contained"
             endIcon={<SendIcon />}

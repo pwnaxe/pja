@@ -32,7 +32,7 @@ function Nav() {
   const handleNavigation = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      const offsetTop = element.offsetTop - 100; // 100 pixels higher
+      const offsetTop = element.offsetTop - 100;
       window.scroll({ top: offsetTop, behavior: 'smooth' });
     }
   };
@@ -45,7 +45,7 @@ function Nav() {
         marginLeft: 'auto',
         display: 'flex',
         bgcolor: '#5E5E5E',
-        height: '5vh',
+        height: '6vh',
         justifyContent: 'center',
         alignItems: 'center',
         mt: 0,
@@ -97,7 +97,7 @@ function Nav() {
               <Button
                 key={page.id}
                 onClick={() => handleNavigation(page.id)}
-                sx={{ my: 2, color: 'white', display: 'block', fontSize: '0.8rem' }}
+                sx={{ my: 2, color: 'white', display: 'block', fontSize: '1rem', mr: 3 }}
               >
                 {page.title}
               </Button>

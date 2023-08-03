@@ -30,7 +30,6 @@ const Footer = () => (
         alignItems: 'center',
         textAlign: 'center',
         minHeight: 400,
-        mb: 5,
       }}
     >
       <Typography variant="h4" sx={{ fontSize: '1.9rem', fontWeight: 'bold' }}>
@@ -57,11 +56,6 @@ const Footer = () => (
           </Typography>
         </Grid>
       </Grid>
-      <Typography sx={{ fontSize: '1.20rem', mt: 5, }}>
-        Kierowniczka ABK</Typography>
-      <Typography sx={{ fontSize: '1.20rem', mt: 2 }}> <strong>  Ada Jedlińska </strong><br />
-        ada.jedlinska@pja.edu.pl
-      </Typography>
     </Box >
 
     <Box

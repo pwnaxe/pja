@@ -36,7 +36,7 @@ function App() {
       <Box sx={{ maxWidth: '100vw' }}>
         <Gallery />
       </Box>
-      <Box sx={{ maxWidth: '100vw', mt: 5 }}>
+      <Box sx={{ maxWidth: '100vw', mt: 12 }}>
         <Partnership />
       </Box>
       <Box sx={{ maxWidth: '100vw' }}>
