@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import MyBook from "./components/MyBook";
 import Box from "@mui/material/Box";
 import Countdown from "./components/Countdown";
+import './i18n';
 
 function App() {
   return (

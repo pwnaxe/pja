@@ -8,18 +8,26 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
+import { useTranslation } from 'react-i18next';
+import Avatar from '@mui/material/Avatar';
+
 
 const pages = [
-  { title: 'O wydarzeniu', id: 'o-wydarzeniu' },
-  { title: 'Agenda', id: 'agenda' },
-  { title: 'Wystawcy', id: 'wystawcy' },
-  { title: 'Galeria', id: 'galeria' },
-  { title: 'Dla Pracodawcy', id: 'dla-pracodawcy' },
-  { title: 'Kontakt', id: 'kontakt' },
+  { title: 'aboutEvent', id: 'o-wydarzeniu' },
+  { title: 'agenda', id: 'agenda' },
+  { title: 'exhibitors', id: 'wystawcy' },
+  { title: 'gallery', id: 'galeria' },
+  { title: 'forEmployer', id: 'dla-pracodawcy' },
+  { title: 'contact', id: 'kontakt' },
 ];
 
 function Nav() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const { t, i18n } = useTranslation();
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+  };
+
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -87,10 +95,16 @@ function Nav() {
             >
               {pages.map((page) => (
                 <MenuItem key={page.id} onClick={() => handleNavigation(page.id)}>
-                  {page.title}
+                  {t(page.title)}
                 </MenuItem>
               ))}
             </Menu>
+            <IconButton onClick={() => changeLanguage('pl')} sx={{ mx: 1 }}>
+              <Avatar src="/assets/poland.webp" sx={{ width: 24, height: 24 }} />
+            </IconButton>
+            <IconButton onClick={() => changeLanguage('en')} sx={{ mx: 1 }}>
+              <Avatar src="/assets/britain.webp" sx={{ width: 24, height: 24 }} />
+            </IconButton>
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center' }}>
             {pages.map((page) => (
@@ -99,9 +113,15 @@ function Nav() {
                 onClick={() => handleNavigation(page.id)}
                 sx={{ my: 2, color: 'white', display: 'block', fontSize: '1rem', mr: 3 }}
               >
-                {page.title}
+                {t(page.title)}
               </Button>
             ))}
+            <IconButton onClick={() => changeLanguage('pl')} sx={{ mx: 1 }}>
+              <Avatar src="/assets/poland.webp" sx={{ width: 24, height: 24 }} />
+            </IconButton>
+            <IconButton onClick={() => changeLanguage('en')} sx={{ mx: 1 }}>
+              <Avatar src="/assets/britain.webp" sx={{ width: 24, height: 24 }} />
+            </IconButton>
           </Box>
         </Toolbar>
       </Container>

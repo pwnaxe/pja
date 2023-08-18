@@ -4,6 +4,7 @@ import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { Typography } from '@mui/material';
 import { Magnifier } from 'solguruz-react-image-magnifier';
+import { useTranslation } from 'react-i18next';
 
 const Page = React.forwardRef((props, ref) => {
   return (
@@ -41,13 +42,14 @@ const Cover = React.forwardRef((props, ref) => {
 });
 
 function MyBook(props) {
+  const { t } = useTranslation();
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up('md')); // 'md' and above is considered as large screen
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <Typography variant="h3" fontWeight={"bold"} align="center" sx={{ mt: 6, mb: 8 }}>
-        Partnerzy Targów Pracy kwiecień 2023
+        {t('book')}
       </Typography>
       <HTMLFlipBook
         width='500'

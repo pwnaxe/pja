@@ -5,6 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Typography from '@mui/material/Typography';
+import { useTranslation } from 'react-i18next';
 
 const images = [
   process.env.PUBLIC_URL + '/assets/images/IMG_20221020_095239.webp',
@@ -22,10 +23,11 @@ const images = [
 ];
 
 function Gallery() {
+  const { t } = useTranslation();
   return (
     <>
       <Typography id="galeria" variant="h3" sx={{ fontWeight: 'bold', textAlign: 'center', ml: "auto", mr: "auto", mb: 2, mt: 5, }}>
-        Galeria
+        {t('galeria')}
       </Typography>
       <div id="gallery">
         <Swiper

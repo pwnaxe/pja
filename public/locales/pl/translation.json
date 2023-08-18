@@ -1,0 +1,53 @@
+{
+  "jobFair": "Targi Pracy PJATK",
+  "springEdition": "Targi Pracy PJATK wiosenna edycja - już 20 kwietnia 2023!",
+  "studentInfo": "Studencie i Absolwencie nie przegap możliwości rozmów z czołowymi pracodawcami",
+  "studentInfo1": "oraz innych atrakcji podczas Targów.",
+  "timeAndPlace": "Widzimy się od 9:30 do 16:30 w budynku A.",
+  "participate": "Zadeklaruj swój udział",
+  "aboutEvent": "O wydarzeniu",
+  "agenda": "Agenda",
+  "exhibitors": "Wystawcy",
+  "gallery": "Galeria",
+  "forEmployer": "Dla Pracodawcy",
+  "contact": "Kontakt",
+  "aboutEvent1": {
+    "title": "O wydarzeniu",
+    "line1": "Targi Pracy PJATK są cyklicznie organizowanym wydarzeniem na kampusie Polsko-Japońskiej Akademii Technik Komputerowych.",
+    "line2": "Podczas Targów Pracy, studenci i absolwenci mają okazję bezpośrednio porozmawiać z firmami oferującymi różnego rodzaju staże i stanowiska.",
+    "line3": "Targi są też świetną okazją do nawiązania kontaktów z przedstawicielami firm z różnych branż."
+  },
+  "springEdition1": {
+    "title": "Co czeka na Was na wiosennej edycji Targów?",
+    "line1": "- oferty pracy, praktyk i staży",
+    "line2": "- wielu przedstawicieli pracodawców, z którymi będziecie mieli okazję porozmawiać",
+    "line3": "- szybkie konsultacje z doradcami zawodowymi Akademickiego Biura Karier PJATK",
+    "line4": "- warsztaty i wykłady towarzyszące Targom Pracy (21.04), a także certyfikaty potwierdzające Wasz udział w warsztatach",
+    "line5": "- grywalizacja dla studentów: do wygrania nagrody!"
+  },
+  "countdown": {
+    "heading": "Do rozpoczęcia wydarzenia pozostało:",
+    "monthTitle": "Miesiące",
+    "dayTitle": "Dni",
+    "hourTitle": "Godziny",
+    "minuteTitle": "Minuty",
+    "secondTitle": "Sekundy",
+    "eventStarted": "Wydarzenie rozpoczęte ⏳"
+  },
+  "footer": {
+    "contact": "Kontakt",
+    "phone": "telefon 22 584 45 88",
+    "careerAdvisors": "DORADCZYNIE ZAWODOWE"
+  },
+  "galeria": "Galeria",
+  "book": "Partnerzy Targów Pracy kwiecień 2023",
+  "partners": "Wystawcy",
+  "partners1": "Uczestnicy wiosennej edycji",
+  "EmployersParticipation": "Pracodawcy - udział w Targach",
+  "DearEmployers": "Drodzy Pracodawcy,",
+  "InviteMessage": "Serdecznie zapraszamy do wypełnienia formularza zgłoszeniowego na Targi Pracy PJATK - edycja wiosna 2023.",
+  "Offer": "Oferujemy Państwu stoiska 2x2 m2 oraz 2x3 m2 oraz możliwość udziału w wydarzeniach towarzyszących Targom Pracy PJATK.",
+  "MoreDetails": "Więcej szczegółów znajdą Państwo w formularzu.",
+  "Questions": "W razie pytań, zapraszamy do kontaktu z biurokarier@pjwstk.edu.pl",
+  "CompanyRegistration": "Zgłoszenie firmy"
+}

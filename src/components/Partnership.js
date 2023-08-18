@@ -5,8 +5,10 @@ import Tlo from '../assets/page/partnership.webp';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 import Grid from '@mui/material/Grid';
+import { useTranslation } from 'react-i18next';
 
 function Partnership() {
+  const { t } = useTranslation();
   return (
     <Box id="dla-pracodawcy"
       sx={{
@@ -26,13 +28,14 @@ function Partnership() {
       <Grid container spacing={5} sx={{ pt: 2, pl: { xs: 2, md: 10 }, pr: { xs: 2, }, textAlign: { xs: 'left' } }} >
         <Grid item xs={12} md={6}>
           <Typography variant="h3" sx={{ fontWeight: 'bold', mb: 3, ml: { xs: 2, md: 15 }, mr: 5, mt: 2, textAlign: { xs: 'center', md: 'left' } }}>
-            Pracodawcy - udział w Targach
+            {t('EmployersParticipation')}
           </Typography>
           <Typography sx={{ fontSize: '1.2rem', ml: { xs: 2, md: 15 }, mr: 5, mt: 2, textAlign: { xs: 'center', md: 'left' } }}>
-            Drodzy Pracodawcy, <br />Serdecznie zapraszamy do wypełnienia formularza zgłoszeniowego na Targi Pracy PJATK - edycja wiosna 2023.<br />
-            Oferujemy Państwu stoiska 2x2 m2 oraz 2x3 m2 oraz możliwość udziału w wydarzeniach towarzyszących Targom Pracy PJATK.<br />
-            Więcej szczegółów znajdą Państwo w formularzu.<br />
-            W razie pytań, zapraszamy do kontaktu z biurokarier@pjwstk.edu.pl
+            {t('DearEmployers')} <br />
+            {t('InviteMessage')}<br />
+            {t('Offer')}<br />
+            {t('MoreDetails')}<br />
+            {t('Questions')}
           </Typography>
         </Grid>
         <Grid item xs={12} md={6} container alignItems="center" justifyContent="center" sx={{ pr: { xl: 15, } }}>
@@ -41,7 +44,7 @@ function Partnership() {
             endIcon={<SendIcon />}
             sx={{ backgroundColor: '#ffe200', color: 'black', borderRadius: '20px' }}
           >
-            Zgłoszenie firmy
+            {t('CompanyRegistration')}
           </Button>
         </Grid>
       </Grid>

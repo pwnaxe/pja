@@ -1,17 +1,19 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
 import LogoSwiper from './LogoSwiper';
+import { useTranslation } from 'react-i18next';
 
 function Partners() {
+  const { t } = useTranslation();
   return (
     <>
       <Typography id="wystawcy" variant="h3" sx={{
         fontWeight: 'bold', textAlign: 'center'
       }}>
-        Wystawcy
+        {t('partners')}
       </Typography>
       <Typography sx={{ fontSize: '1.2rem', textAlign: 'center' }}>
-        Uczestnicy wiosennej edycji
+        {t('partners1')}
       </Typography>
       <LogoSwiper />
     </>

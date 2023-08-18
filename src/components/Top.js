@@ -1,10 +1,10 @@
 import React from 'react';
 import { Grid, Box, Typography, Button } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
-
 import Photobg from '../assets/page/top.png';
 import Photobgm from '../assets/page/topmob.png';
 import Logo from '../assets/page/logoabk.webp';
+import { useTranslation } from 'react-i18next';
 
 function Top() {
   const responsiveBackground = {
@@ -21,6 +21,7 @@ function Top() {
     justifyContent: { xs: 'center', md: 'flex-start' },
     alignItems: 'center',
   };
+  const { t } = useTranslation();
 
   const containerStyles = {
     pl: { xs: 2, sm: '3vw', md: '4vw', lg: '4vw', xl: '10vw' },
@@ -44,11 +45,10 @@ function Top() {
         <Grid item sx={{ mb: 5 }}>
           <Box component="img" src={Logo} alt="logoabk" sx={logoPosition} />
         </Grid>
-
         <Grid item>
           <Box display={{ xs: 'none', xl: 'block' }}>
             <Typography variant="h2" sx={{ ml: -2, fontWeight: 'bold', textAlign: { xs: 'center', md: 'left' } }}>
-              Targi Pracy PJATK
+              {t('jobFair')}
             </Typography>
           </Box>
         </Grid>
@@ -56,22 +56,22 @@ function Top() {
         <Grid container direction="column" alignItems={{ xs: 'center', sm: 'flex-start' }} sx={{ maxWidth: { xs: '100%', sm: '40%', md: '40%', lg: '100%' } }}>
           <Grid item>
             <Typography variant='h5' sx={{ fontWeight: 'bold', pb: { xs: 3, xl: '0', }, textAlign: { xs: 'center', sm: 'left' } }}>
-              Targi Pracy PJATK wiosenna edycja - już 20 kwietnia 2023!
+              {t('springEdition')}
             </Typography>
           </Grid>
 
           <Grid item>
             <Typography sx={{ fontSize: '1.2rem', textAlign: { xs: 'center', sm: 'left' } }}>
-              Studencie i Absolwencie nie przegap możliwości rozmów z czołowymi pracodawcami <br />
-              oraz innych atrakcji podczas Targów. <br /><br />
-              Widzimy się od 9:30 do 16:30 w budynku A.
+              {t('studentInfo')} <br />
+              {t('studentInfo1')} <br /><br />
+              {t('timeAndPlace')}
             </Typography>
           </Grid>
         </Grid>
 
         <Grid item>
           <Button variant="contained" endIcon={<SendIcon />} sx={{ backgroundColor: '#ffe200', color: 'black', borderRadius: '20px', }}>
-            Zadeklaruj swój udział
+            {t('participate')}
           </Button>
         </Grid>
       </Grid>

@@ -1,0 +1,53 @@
+{
+  "jobFair": "PJATK Job Fair",
+  "springEdition": "PJATK Job Fair Spring Edition - coming on April 20th, 2023!",
+  "studentInfo": "Students and Graduates, don't miss the opportunity to talk with top employers",
+  "studentInfo1": "and other attractions during the Fair.",
+  "timeAndPlace": "See you from 9:30 AM to 4:30 PM in building A.",
+  "participate": "Declare your participation",
+  "aboutEvent": "About Event",
+  "agenda": "Agenda",
+  "exhibitors": "Exhibitors",
+  "gallery": "Gallery",
+  "forEmployer": "For Employer",
+  "contact": "Contact",
+  "aboutEvent1": {
+    "title": "About the event",
+    "line1": "The PJATK Job Fair is a regularly organized event on the campus of the Polish-Japanese Academy of Computer Techniques.",
+    "line2": "During the Job Fair, students and graduates have the opportunity to talk directly to companies offering various internships and positions.",
+    "line3": "The fair is also a great opportunity to establish contacts with representatives of companies from various industries."
+  },
+  "springEdition1": {
+    "title": "What awaits you in the spring edition of the Fair?",
+    "line1": "- job offers, internships and apprenticeships",
+    "line2": "- many employer representatives with whom you will have the opportunity to talk",
+    "line3": "- quick consultations with career advisors from the PJATK Academic Career Office",
+    "line4": "- workshops and lectures accompanying the Job Fair (21.04), as well as certificates confirming your participation in the workshops",
+    "line5": "- gamification for students: prizes to be won!"
+  },
+  "countdown": {
+    "heading": "Time left until the event starts:",
+    "monthTitle": "Months",
+    "dayTitle": "Days",
+    "hourTitle": "Hours",
+    "minuteTitle": "Minutes",
+    "secondTitle": "Seconds",
+    "eventStarted": "Event started ⏳"
+  },
+  "footer": {
+    "contact": "Contact",
+    "phone": "phone 22 584 45 88",
+    "careerAdvisors": "CAREER ADVISORS"
+  },
+  "galeria": "Gallery",
+  "book": "Partners of the April 2023 Job Fair",
+  "partners": "Partners",
+  "partners1": "Participants of the spring edition",
+  "EmployersParticipation": "Employers - Participation in the Fair",
+  "DearEmployers": "Dear Employers,",
+  "InviteMessage": "We cordially invite you to fill out the registration form for the PJATK Job Fair - spring 2023 edition.",
+  "Offer": "We offer you 2x2 m2 and 2x3 m2 booths as well as the opportunity to participate in events accompanying the PJATK Job Fair.",
+  "MoreDetails": "More details can be found in the form.",
+  "Questions": "If you have any questions, please contact biurokarier@pjwstk.edu.pl",
+  "CompanyRegistration": "Company Registration"
+}

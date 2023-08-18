@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import FlipCountdown from '@rumess/react-flip-countdown';
 import { Box, Slide, Snackbar, useMediaQuery, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
+import { useTranslation } from 'react-i18next';
 
 const CountdownPopup = () => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.between('xs', 'sm'));
   const [open, setOpen] = useState(true);
+  const { t } = useTranslation();
 
   const handleClose = () => {
     setOpen(false);
@@ -34,18 +36,18 @@ const CountdownPopup = () => {
           }}
         >
           <Typography variant="h8" align="center">
-            <b>Do rozpoczęcia wydarzenia pozostało:</b>
+            <b>{t('countdown.heading')}</b>
           </Typography>
           <FlipCountdown
             hideYear
-            monthTitle='Miesiące'
-            dayTitle='Dni'
-            hourTitle='Godziny'
-            minuteTitle='Minuty'
-            secondTitle='Sekundy'
+            monthTitle={t('countdown.monthTitle')}
+            dayTitle={t('countdown.dayTitle')}
+            hourTitle={t('countdown.hourTitle')}
+            minuteTitle={t('countdown.minuteTitle')}
+            secondTitle={t('countdown.secondTitle')}
             size='extra-small'
             endAt={'2023-11-19 10:00:00'}
-            onTimeUp={() => console.log("Wydarzenie rozpoczęte ⏳")}
+            onTimeUp={() => console.log(t('countdown.eventStarted'))}
           />
         </Box>
       </Slide>
