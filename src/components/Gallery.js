@@ -8,18 +8,17 @@ import Typography from '@mui/material/Typography';
 import { useTranslation } from 'react-i18next';
 
 const images = [
-  process.env.PUBLIC_URL + '/assets/images/IMG_20221020_095239.webp',
-  process.env.PUBLIC_URL + '/assets/images/IMG_20221020_095252.webp',
-  process.env.PUBLIC_URL + '/assets/images/IMG_20221020_095305.webp',
-  process.env.PUBLIC_URL + '/assets/images/IMG_20221020_095329.webp',
-  process.env.PUBLIC_URL + '/assets/images/IMG_20221020_100109.webp',
-  process.env.PUBLIC_URL + '/assets/images/IMG_20221020_104332.webp',
-  process.env.PUBLIC_URL + '/assets/images/IMG_20221020_111020.webp',
-  process.env.PUBLIC_URL + '/assets/images/IMG_20221020_111204.webp',
-  process.env.PUBLIC_URL + '/assets/images/IMG_20221020_111626.webp',
-  process.env.PUBLIC_URL + '/assets/images/IMG_20221020_111705.webp',
-  process.env.PUBLIC_URL + '/assets/images/IMG_20221020_112147.webp',
-  process.env.PUBLIC_URL + '/assets/images/IMG_20221020_153644.webp'
+  process.env.PUBLIC_URL + '/assets/images/1.jpg',
+  process.env.PUBLIC_URL + '/assets/images/2.jpg',
+  process.env.PUBLIC_URL + '/assets/images/3.jpg',
+  process.env.PUBLIC_URL + '/assets/images/4.jpg',
+  process.env.PUBLIC_URL + '/assets/images/5.jpg',
+  process.env.PUBLIC_URL + '/assets/images/6.jpg',
+  process.env.PUBLIC_URL + '/assets/images/7.jpg',
+  process.env.PUBLIC_URL + '/assets/images/8.jpg',
+  process.env.PUBLIC_URL + '/assets/images/9.jpg',
+  process.env.PUBLIC_URL + '/assets/images/10.jpg',
+  process.env.PUBLIC_URL + '/assets/images/11.jpg',
 ];
 
 function Gallery() {
@@ -36,11 +35,11 @@ function Gallery() {
           navigation
           pagination={{ clickable: true }}
           autoplay={{ delay: 5000, disableOnInteraction: false }}
-          style={{ maxWidth: '90vw', height: 'auto', minHeight: 'auto', maxHeight: '100vh' }}
+          style={{ maxWidth: '85vw', height: '600px', maxHeight: '85vh' }}
         >
           {images.map((image, index) => (
             <SwiperSlide key={index} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
-              <img src={image} alt={`Slide ${index}`} style={{ maxWidth: '90%', maxHeight: '100%', objectFit: 'contain' }} />
+              <img src={image} alt={`Slide ${index}`} style={{ maxWidth: '90%', maxHeight: '100%', height: '100%', objectFit: 'contain' }} />
             </SwiperSlide>
           ))}
         </Swiper>

@@ -70,9 +70,9 @@ function Top() {
         </Grid>
 
         <Grid item>
-          <Button variant="contained" endIcon={<SendIcon />} sx={{ backgroundColor: '#ffe200', color: 'black', borderRadius: '20px', }}>
+          {/* <Button variant="contained" endIcon={<SendIcon />} sx={{ backgroundColor: '#ffe200', color: 'black', borderRadius: '20px', }}>
             {t('participate')}
-          </Button>
+          </Button> */}
         </Grid>
       </Grid>
     </Box >

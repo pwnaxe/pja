@@ -1,10 +1,10 @@
-.swiper {
+#logoimg .swiper {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.swiper-slide {
+#logoimg .swiper-slide {
   background-position: center;
   background-size: contain;
   width: 250px;
@@ -14,14 +14,14 @@
   align-items: center;
 }
 
-.swiper-slide img {
+#logoimg .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-.autoplay-progress {
+#logoimg .autoplay-progress {
   position: absolute;
   right: 16px;
   bottom: 16px;
@@ -35,7 +35,7 @@
   color: var(--swiper-theme-color);
 }
 
-.autoplay-progress svg {
+#logoimg .autoplay-progress svg {
   --progress: 0;
   position: absolute;
   left: 0;
@@ -49,4 +49,28 @@
   stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
   stroke-dasharray: 125.6;
   transform: rotate(-90deg);
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  background-position: center;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

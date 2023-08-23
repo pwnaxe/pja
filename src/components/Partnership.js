@@ -25,7 +25,7 @@ function Partnership() {
         pt: 5,
       }}
     >
-      <Grid container spacing={5} sx={{ pt: 2, pl: { xs: 2, md: 10 }, pr: { xs: 2, }, textAlign: { xs: 'left' } }} >
+      <Grid container spacing={5} sx={{ pt: 18, pl: { xs: 2, md: 10 }, pr: { xs: 2, }, mb: 4, height: '450px', textAlign: { xs: 'left' } }} >
         <Grid item xs={12} md={6}>
           <Typography variant="h3" sx={{ fontWeight: 'bold', mb: 3, ml: { xs: 2, md: 15 }, mr: 5, mt: 2, textAlign: { xs: 'center', md: 'left' } }}>
             {t('EmployersParticipation')}
@@ -34,18 +34,18 @@ function Partnership() {
             {t('DearEmployers')} <br />
             {t('InviteMessage')}<br />
             {t('Offer')}<br />
-            {t('MoreDetails')}<br />
-            {t('Questions')}
+            {/* {t('MoreDetails')}<br />
+            {t('Questions')} */}
           </Typography>
         </Grid>
         <Grid item xs={12} md={6} container alignItems="center" justifyContent="center" sx={{ pr: { xl: 15, } }}>
-          <Button id="kontakt"
+          {/* <Button id="kontakt"
             variant="contained"
             endIcon={<SendIcon />}
             sx={{ backgroundColor: '#ffe200', color: 'black', borderRadius: '20px' }}
           >
             {t('CompanyRegistration')}
-          </Button>
+          </Button> */}
         </Grid>
       </Grid>
     </Box >
