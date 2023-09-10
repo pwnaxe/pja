@@ -10,6 +10,7 @@ const CountdownPopup = () => {
   const [open, setOpen] = useState(true);
   const { t } = useTranslation();
 
+
   const handleClose = () => {
     setOpen(false);
   };
@@ -35,7 +36,7 @@ const CountdownPopup = () => {
             borderRadius: '20px',
           }}
         >
-          <Typography variant="h8" align="center">
+          <Typography variant="h6" align="center">
             <b>{t('countdown.heading')}</b>
           </Typography>
           <FlipCountdown
@@ -46,7 +47,7 @@ const CountdownPopup = () => {
             minuteTitle={t('countdown.minuteTitle')}
             secondTitle={t('countdown.secondTitle')}
             size='extra-small'
-            endAt={'2023-11-19 10:00:00'}
+            endAt={'2023-10-18 09:30:00'}
             onTimeUp={() => console.log(t('countdown.eventStarted'))}
           />
         </Box>

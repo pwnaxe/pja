@@ -70,9 +70,14 @@ function Top() {
         </Grid>
 
         <Grid item>
-          {/* <Button variant="contained" endIcon={<SendIcon />} sx={{ backgroundColor: '#ffe200', color: 'black', borderRadius: '20px', }}>
+          <Button
+            variant="contained"
+            endIcon={<SendIcon />}
+            sx={{ backgroundColor: '#ffe200', color: 'black', borderRadius: '20px' }}
+            onClick={() => window.open('https://forms.gle/tLwr66SCHJx1PzpT9', '_blank')}
+          >
             {t('participate')}
-          </Button> */}
+          </Button>
         </Grid>
       </Grid>
     </Box >
