@@ -21,6 +21,7 @@
     "react-dom": "^18.2.0",
     "react-i18next": "^13.1.2",
     "react-pageflip": "^2.0.3",
+    "react-router-dom": "^6.15.0",
     "react-scripts": "5.0.1",
     "solguruz-react-image-magnifier": "^1.0.1",
     "styled-components": "^5.3.10",
