@@ -19,8 +19,12 @@ function Popup() {
     console.log(`Wybrano miasto: ${city}`);
     setOpen(false);
 
+    if (city === 'Warszawa') {
+      navigate('/wwa');
+    }
+
     if (city === 'Gdańsk') {
-      navigate('/gdansk');
+      navigate('/gda');
     }
   };
 

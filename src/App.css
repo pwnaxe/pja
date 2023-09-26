@@ -8,3 +8,8 @@ body {
   background: url("./assets/page/partners.webp") no-repeat center center;
   background-size: cover;
 }
+
+#main {
+  background: url("./assets/page/logoabk.webp") repeat center center;
+  height: 100vh;
+}

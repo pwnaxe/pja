@@ -2,24 +2,33 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Nav from "./components/Nav";
+import Navgd from "./components/Navgd";
 import Top from "./components/Top";
+import Topgd from "./components/Topgd";
 import Popup from "./components/Popup";
 import About from "./components/About";
+import Aboutgd from "./components/Aboutgd";
 import Partners from "./components/Partners";
+import Partnersgd from "./components/Partnersgd";
 import Gallery from "./components/Gallery";
+import Gallerygd from "./components/Gallerygd";
 import Partnership from "./components/Partnership";
+import Partnershipgd from "./components/Partnershipgd";
 import Footer from "./components/Footer";
+import Footergd from "./components/Footergd";
 import MyBook from "./components/MyBook";
 import Box from "@mui/material/Box";
 import Countdown from "./components/Countdown";
+import Countdowngd from "./components/Countdowngd";
 import './i18n';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/gdansk" element={<GdanskComponent />} />
         <Route path="/" element={<MainComponent />} />
+        <Route path="/gda" element={<GdanskComponent />} />
+        <Route path="/wwa" element={<WarszawaComponent />} />
       </Routes>
     </Router>
   );
@@ -27,9 +36,16 @@ function App() {
 
 function MainComponent() {
   return (
+    <div id="main">
+      <Popup />
+    </div>
+  );
+}
+
+function WarszawaComponent() {
+  return (
     <>
       <Top />
-      <Popup />
       <Box sx={{
         display: 'flex',
         flexDirection: 'column',
@@ -66,7 +82,7 @@ function MainComponent() {
 function GdanskComponent() {
   return (
     <>
-      <Top />
+      <Topgd />
       <Box sx={{
         display: 'flex',
         flexDirection: 'column',
@@ -80,22 +96,22 @@ function GdanskComponent() {
         <MyBook />
       </Box>
       <Box sx={{ minHeight: '100vh', mt: 10, maxWidth: '100vw' }}>
-        <About />
+        <Aboutgd />
       </Box>
       <Box sx={{ mt: 10, pb: 10, maxWidth: '100vw' }}>
-        <Partners />
+        <Partnersgd />
       </Box>
       <Box sx={{ maxWidth: '100vw' }}>
-        <Gallery />
+        <Gallerygd />
       </Box>
       <Box sx={{ maxWidth: '100vw', mt: 12 }}>
-        <Partnership />
+        <Partnershipgd />
       </Box>
       <Box sx={{ maxWidth: '100vw' }}>
-        <Footer />
+        <Footergd />
       </Box>
-      <Nav />
-      <Countdown />
+      <Navgd />
+      <Countdowngd />
     </>
   );
 }

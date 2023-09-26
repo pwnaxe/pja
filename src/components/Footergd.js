@@ -2,7 +2,7 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
-import Tlo from '../assets/page/footer.webp';
+import Tlo from '../assets/pagegd/footer.webp';
 import Grid from '@mui/material/Grid';
 import { useTranslation } from 'react-i18next';
 
