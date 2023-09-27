@@ -31,14 +31,7 @@ function Popup() {
   return (
     <Dialog
       open={open}
-      onClose={() => handleClose('Anulowano')}
     >
-      <DialogTitle>{"Wybierz skąd jesteś"}</DialogTitle>
-      <DialogContent>
-        <DialogContentText>
-          Wybierz miasto, z którego pochodzisz.
-        </DialogContentText>
-      </DialogContent>
       <DialogActions>
         <Button onClick={() => handleClose('Warszawa')} color="primary">
           Warszawa
