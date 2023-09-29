@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Nav from "./components/Nav";
@@ -21,6 +21,7 @@ import Box from "@mui/material/Box";
 import Countdown from "./components/Countdown";
 import Countdowngd from "./components/Countdowngd";
 import './i18n';
+import i18n from './i18n';
 
 function App() {
   return (
@@ -43,6 +44,16 @@ function MainComponent() {
 }
 
 function WarszawaComponent() {
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const lang = urlParams.get('lang');
+
+    if (lang) {
+      i18n.changeLanguage(lang);
+    }
+  }, []);
+
+
   return (
     <>
       <Top />
