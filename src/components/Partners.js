@@ -8,7 +8,7 @@ function Partners() {
   return (
     <>
       <Typography id="wystawcy" variant="h3" sx={{
-        fontWeight: 'bold', textAlign: 'center'
+        fontWeight: 'bold', textAlign: 'center',
       }}>
         {t('partners')}
       </Typography>

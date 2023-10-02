@@ -99,12 +99,6 @@ function Nav() {
                 </MenuItem>
               ))}
             </Menu>
-            <IconButton onClick={() => changeLanguage('pl')} sx={{ mx: 1 }}>
-              <Avatar src="/assets/poland.webp" sx={{ width: 24, height: 24 }} />
-            </IconButton>
-            <IconButton onClick={() => changeLanguage('en')} sx={{ mx: 1 }}>
-              <Avatar src="/assets/britain.webp" sx={{ width: 24, height: 24 }} />
-            </IconButton>
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center' }}>
             {pages.map((page) => (

@@ -46,10 +46,18 @@ function About() {
             </Typography>
           </Box>
         </Grid>
-        <Grid item xs={12} md={6} >
-          <Box display="flex" justifyContent="center">
-            <img src={Data} alt="date" style={{ width: '30vh', height: 'auto' }}
-            />
+        <Grid item xs={12} md={6}>
+          <Box display="flex" justifyContent="center" position="relative">
+            <img src={Data} alt="date" style={{ width: '30vh', height: 'auto' }}></img>
+            <Typography variant="h3" component="h4" gutterBottom style={{
+              position: 'absolute',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              color: 'black'
+            }}>
+              18 Października
+            </Typography>
           </Box>
         </Grid>
       </Grid >

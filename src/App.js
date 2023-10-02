@@ -78,7 +78,7 @@ function WarszawaComponent() {
       <Box sx={{ maxWidth: '100vw' }}>
         <Gallery />
       </Box>
-      <Box sx={{ maxWidth: '100vw', mt: 12 }}>
+      <Box sx={{ maxWidth: '100vw' }}>
         <Partnership />
       </Box>
       <Box sx={{ maxWidth: '100vw' }}>
