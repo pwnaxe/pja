@@ -54,23 +54,19 @@ export default function App() {
           loop={true}
           initialSlide={4}
         >
-          <SwiperSlide><img src="/assets/logos/500x225.webp" alt="Logo 1" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/Artboard 1.webp" alt="Logo 2" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/Artboard 2.webp" alt="Logo 3" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/asse_datasys.webp" alt="Logo 4" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/Kopia blue-horizontal.webp" alt="Logo 5" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/Kopia Kopia Kopia asseco_data_sys - Marta.webp" alt="Logo 6" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/Kopia Kopia Kopia EPAM_LOGO_Primary - Agnieszka Krzepkowska.webp" alt="Logo 7" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/Kopia Kopia Kopia HAYS-ARROW_LOGO_STRAPLINE_COL_CMYK - Gabriela S..webp" alt="Logo 8" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/Kopia Kopia Kopia logo NetWorks! PMS - Agnieszka Dziedzic.webp" alt="Logo 9" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/Kopia Kopia Kopia Logo_BEC Poland (1) - Weronika Winiarek.webp" alt="Logo 10" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/Kopia Kopia Kopia P_G logo - Paula Polańczyk.webp" alt="Logo 11" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/KPMG_NoCP_CMYK_Euro_281.webp" alt="Logo 12" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/Master_Logo_RGB (1).webp" alt="Logo 13" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/Obszar roboczy 2.webp" alt="Logo 14" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/Redge_Technologies_logo_png_czarne.webp" alt="Logo 15" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/rsz_2021_xperi_4brands-cmyk.webp" alt="Logo 16" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/wp logo png (1).webp" alt="Logo 17" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/DellTech_Logo_Prm_Blue_rgb.png" alt="Logo 1" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/Kopia Kopia Kopia P_G logo - Paula Polańczyk.png" alt="Logo 2" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/KPMG_NoCP_RGB_279 - Karolina Forkasiewicz.jpg" alt="Logo 4" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/Nussknacker logo full purple.png" alt="Logo 5" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/syrenka.jpg" alt="Logo 6" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/wp logo png.png" alt="Logo 7" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/DXC Logo_Purple+Black RGB.png" alt="Logo 8" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/Essembli Logo tlo kolor duze.jpg" alt="Logo 9" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/images.png" alt="Logo 10" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/Inter Cars 2015 logo_hor_podstawowe_poziome_RGB.png" alt="Logo 11" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/MicrosoftTeams-image (1).png" alt="Logo 12" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/Obszar roboczy 2 (2).png" alt="Logo 13" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/P72_Logo_Primary.png" alt="Logo 14" /></SwiperSlide>
           <div className="autoplay-progress" slot="container-end">
             <svg viewBox="0 0 48 48" ref={progressCircle}>
               <circle cx="24" cy="24" r="20"></circle>

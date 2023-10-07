@@ -39,10 +39,10 @@ function About() {
             </Typography>
             <Typography variant="body1" gutterBottom>
               {t('springEdition1.line1')}<br />
-              {/* {t('springEdition1.line2')}<br />
+              {t('springEdition1.line2')}<br />
               {t('springEdition1.line3')}<br />
               {t('springEdition1.line4')}<br />
-              {t('springEdition1.line5')} */}
+              {t('springEdition1.line5')}
             </Typography>
           </Box>
         </Grid>
