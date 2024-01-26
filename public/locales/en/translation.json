@@ -1,6 +1,6 @@
 {
   "jobFair": "PJAIT Career Fair",
-  "springEdition": "PJAIT Career Fair Autumn Edition - coming on October 18th, 2023!",
+  "springEdition": "PJAIT Career Fair Spring Edition - coming on April 18th, 2024!",
   "studentInfo": "Students and Graduates, don't miss the opportunity to talk with top employers",
   "studentInfo1": "and other attractions during the Fair.",
   "timeAndPlace": "See you from 9:30 AM to 4:30 PM in building A.",
@@ -18,11 +18,11 @@
     "line3": "The fair is also a great opportunity to establish contacts with representatives of companies from various industries."
   },
   "springEdition1": {
-    "title": "What awaits you at the autumn edition of the Fair?",
+    "title": "What awaits you at the spring edition of the Fair?",
     "line1": "Talks with employers",
     "line2": "- Many job and internship offers",
     "line3": "- Quick consultation of CV with career advisors",
-    "line4": "- Interesting workshops on 19.10",
+    "line4": "- Interesting lectures and workshop with employers",
     "line5": "- Prize competitions"
   },
   "countdown": {
@@ -42,12 +42,13 @@
   "galeria": "Gallery",
   "book": "Partners of the April 2023 Job Fair",
   "partners": "Partners",
-  "partners1": "Participants in autumn edition",
+  "partners1": "Participants in previous edition",
   "EmployersParticipation": "Partnership",
   "DearEmployers": "Dear Employers,",
-  "InviteMessage": "We invite you to participate in the PJAIT Career Fair - Autumn 2023 edition.",
+  "InviteMessage": "We invite you to participate in the PJAIT Career Fair - Spring 2024 edition.",
   "Offer": "Employers interested in receiving a fair participation offer are invited to contact us by email: biurokarier@pjwstk.edu.pl",
   "MoreDetails": "More details can be found in the form.",
   "Questions": "If you have any questions, please contact biurokarier@pjwstk.edu.pl",
-  "CompanyRegistration": "Company Registration"
+  "CompanyRegistration": "Company Registration",
+  "aboutusdate": "18 April"
 }

@@ -56,7 +56,7 @@ function About() {
               transform: 'translate(-50%, -50%)',
               color: 'black'
             }}>
-              18 Października
+              {t('aboutusdate')}
             </Typography>
           </Box>
         </Grid>

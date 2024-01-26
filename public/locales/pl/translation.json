@@ -1,6 +1,6 @@
 {
   "jobFair": "Targi Pracy PJATK",
-  "springEdition": "Targi Pracy PJATK jesienna edycja - już 18 października 2023!",
+  "springEdition": "Targi Pracy PJATK wiosenna edycja - już 18 kwietnia 2024!",
   "springEditiongd": "Targi Pracy PJATK Gdańsk - już 15 listopada 2023!",
   "studentInfo": "Studencie i Absolwencie nie przegap możliwości rozmów z czołowymi pracodawcami",
   "studentInfo1": "oraz innych atrakcji podczas Targów.",
@@ -21,7 +21,7 @@
     "line3": "Targi są też świetną okazją do nawiązania kontaktów z przedstawicielami firm z różnych branż."
   },
   "springEdition1": {
-    "title": "Co czeka na Was na jesiennej edycji Targów?",
+    "title": "Co czeka na Was na wiosennej edycji Targów?",
     "titlegd": "Co czeka na Was na Targach Pracy PJATK w Gdańsku?",
     "line1": "- Rozmowy z pracodawcami",
     "line1gd": "- Wiele rozmów z pracodawcami",
@@ -29,7 +29,7 @@
     "line2gd": "- Szybkie konsultacje Waszego CV z doradcami zawodowymi z ABK",
     "line3": "- Szybka konsultacja CV z doradcami zawodowymi ABK",
     "line3gd": "- Bezpośrednie aplikowanie o pracę, staż czy praktyki",
-    "line4": "- Ciekawe warsztaty w dniu 19.10",
+    "line4": "- Ciekawe prelekcje przygotowane przez pracodawców",
     "line4gd": "- Konkursy z nagrodami!",
     "line5": "- Konkursy z nagrodami"
   },
@@ -52,14 +52,15 @@
   "book": "Partnerzy Targów Pracy kwiecień 2023",
   "bookgd": "Partnerzy Targów Pracy Warszawa kwiecień 2023",
   "partners": "Wystawcy",
-  "partners1": "Uczestnicy jesiennej edycji",
+  "partners1": "Uczestnicy poprzedniej edycji",
   "partners1gd": "Uczestnicy wiosennej edycji Targów Pracy w Warszawie",
   "EmployersParticipation": "Pracodawcy - udział w Targach",
   "DearEmployers": "Drodzy Pracodawcy,",
-  "InviteMessage": "Serdecznie zapraszamy do udziału w Targach Pracy PJATK - edycja jesień 2023.",
+  "InviteMessage": "Serdecznie zapraszamy do udziału w Targach Pracy PJATK - edycja wiosna 2024.",
   "InviteMessagegd": "Serdecznie zapraszamy do udziału w Targach Pracy PJATK w Gdańsku. ",
   "Offer": "Pracodawców zainteresowanych otrzymaniem oferty targowej zapraszamy do kontaktu mailowego:  biurokarier@pjwstk.edu.pl",
   "MoreDetails": "Więcej szczegółów znajdą Państwo w formularzu.",
   "Questions": "W razie pytań, zapraszamy do kontaktu z biurokarier@pjwstk.edu.pl",
-  "CompanyRegistration": "Zgłoszenie firmy"
+  "CompanyRegistration": "Zgłoszenie firmy",
+  "aboutusdate": "18 kwietnia"
 }

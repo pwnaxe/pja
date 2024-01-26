@@ -69,7 +69,7 @@ function Top() {
           </Grid>
         </Grid>
 
-        <Grid item>
+        {/* <Grid item>
           <Button
             variant="contained"
             endIcon={<SendIcon />}
@@ -78,7 +78,7 @@ function Top() {
           >
             {t('participate')}
           </Button>
-        </Grid>
+        </Grid> */}
       </Grid>
     </Box >
   );
