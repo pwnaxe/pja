@@ -56,13 +56,20 @@ function WarszawaComponent() {
 
   return (
     <>
-      <Top />
+      <Box sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        maxHeight: '100vh',
+        maxWidth: '100vw',
+      }}>
+        <Top />
+      </Box>
       <Box sx={{
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         minHeight: '100vh',
-        mt: 3,
         maxWidth: '100vw',
         backgroundColor: 'gray',
         py: 3,
@@ -81,7 +88,7 @@ function WarszawaComponent() {
       <Box sx={{ maxWidth: '100vw' }}>
         <Partnership />
       </Box>
-      <Box sx={{ maxWidth: '100vw' }}>
+      <Box sx={{ maxWidth: '100vw', pt: 15 }}>
         <Footer />
       </Box>
       <Nav />
@@ -93,13 +100,20 @@ function WarszawaComponent() {
 function GdanskComponent() {
   return (
     <>
-      <Topgd />
+      <Box sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        maxHeight: '100vh',
+        maxWidth: '100vw',
+      }}>
+        <Topgd />
+      </Box>
       <Box sx={{
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         minHeight: '100vh',
-        mt: 3,
         maxWidth: '100vw',
         backgroundColor: 'gray',
         py: 3,
@@ -115,7 +129,7 @@ function GdanskComponent() {
       <Box sx={{ maxWidth: '100vw' }}>
         <Gallerygd />
       </Box>
-      <Box sx={{ maxWidth: '100vw', mt: 12 }}>
+      <Box sx={{ maxWidth: '100vw', }}>
         <Partnershipgd />
       </Box>
       <Box sx={{ maxWidth: '100vw' }}>
