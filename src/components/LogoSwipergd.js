@@ -54,19 +54,18 @@ export default function App() {
           loop={true}
           initialSlide={4}
         >
-          <SwiperSlide><img src="/assets/logos/DellTech_Logo_Prm_Blue_rgb.png" alt="Logo 1" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/Kopia Kopia Kopia P_G logo - Paula Polańczyk.png" alt="Logo 2" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/KPMG_NoCP_RGB_279 - Karolina Forkasiewicz.jpg" alt="Logo 4" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/Nussknacker logo full purple.png" alt="Logo 5" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/syrenka.jpg" alt="Logo 6" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/wp logo png.png" alt="Logo 7" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/DXC Logo_Purple+Black RGB.png" alt="Logo 8" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/Essembli Logo tlo kolor duze.jpg" alt="Logo 9" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/images.png" alt="Logo 10" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/Inter Cars 2015 logo_hor_podstawowe_poziome_RGB.png" alt="Logo 11" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/MicrosoftTeams-image (1).png" alt="Logo 12" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/Obszar roboczy 2 (2).png" alt="Logo 13" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/P72_Logo_Primary.png" alt="Logo 14" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/Capgemini_Logo1.png" alt="Logo 1" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/Inter Cars 2015 logo_hor_podstawowe_poziome_RGB (1).png" alt="Logo 2" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/logo BGK.png" alt="Logo 3" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/Logo_BEC Poland_RGB.png" alt="Logo 4" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/Logo_ING_Hubs_Poland.png" alt="Logo 5" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/Logo_UKNF_granatowe_na_bialym_tle (1).png" alt="Logo 6" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/Logo.png" alt="Logo 7" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/Master_Logo_RGB (1) (2).png" alt="Logo 8" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/Obszar roboczy 2 (3).png" alt="Logo 9" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/PwC_fl_c (1).png" alt="Logo 10" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/Warszawa_znak_CMYK_kolorowy_Urzad_Miasta (1)-1.png" alt="Logo 11" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/wp logo png (1) (1).png" alt="Logo 12" /></SwiperSlide>
           <div className="autoplay-progress" slot="container-end">
             <svg viewBox="0 0 48 48" ref={progressCircle}>
               <circle cx="24" cy="24" r="20"></circle>
