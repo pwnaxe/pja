@@ -76,7 +76,7 @@ const Footer = () => {
           flexWrap: 'wrap'
         }}
       >
-        <img src="./assets/logos/pjatk2.webp" alt="Logo" />
+        <img src="../assets/page/pjatk2.webp" alt="Logo" />
         <Box
           sx={{
             display: 'flex',
