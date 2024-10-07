@@ -65,7 +65,7 @@ function WarszawaComponent() {
       }}>
         <Top />
       </Box>
-      <Box sx={{
+      {/* <Box sx={{
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -75,7 +75,7 @@ function WarszawaComponent() {
         py: 3,
       }}>
         <MyBook />
-      </Box>
+      </Box> */}
       <Box sx={{ minHeight: '100vh', mt: 10, maxWidth: '100vw' }}>
         <About />
       </Box>

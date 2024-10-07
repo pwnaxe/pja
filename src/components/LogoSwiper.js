@@ -54,18 +54,16 @@ export default function App() {
           loop={true}
           initialSlide={4}
         >
-          <SwiperSlide><img src="/assets/logos/Capgemini_Logo1.png" alt="Logo 1" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/Inter Cars 2015 logo_hor_podstawowe_poziome_RGB (1).png" alt="Logo 2" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/logo BGK.png" alt="Logo 3" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/Logo_BEC Poland_RGB.png" alt="Logo 4" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/Logo_ING_Hubs_Poland.png" alt="Logo 5" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/Logo_UKNF_granatowe_na_bialym_tle (1).png" alt="Logo 6" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/Logo.png" alt="Logo 7" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/Master_Logo_RGB (1) (2).png" alt="Logo 8" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/Obszar roboczy 2 (3).png" alt="Logo 9" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/PwC_fl_c (1).png" alt="Logo 10" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/Warszawa_znak_CMYK_kolorowy_Urzad_Miasta (1)-1.png" alt="Logo 11" /></SwiperSlide>
-          <SwiperSlide><img src="/assets/logos/wp logo png (1) (1).png" alt="Logo 12" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/1.png" alt="Logo 1" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/2.jpg" alt="Logo 2" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/3.png" alt="Logo 3" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/4.png" alt="Logo 4" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/5.png" alt="Logo 5" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/6.png" alt="Logo 6" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/7.png" alt="Logo 7" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/8.png" alt="Logo 8" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/9.jpg" alt="Logo 9" /></SwiperSlide>
+          <SwiperSlide><img src="/assets/logos/10.png" alt="Logo 10" /></SwiperSlide>
           <div className="autoplay-progress" slot="container-end">
             <svg viewBox="0 0 48 48" ref={progressCircle}>
               <circle cx="24" cy="24" r="20"></circle>

@@ -47,7 +47,7 @@ const CountdownPopup = () => {
             minuteTitle={t('countdown.minuteTitle')}
             secondTitle={t('countdown.secondTitle')}
             size='extra-small'
-            endAt={'2024-04-18 09:30:00'}
+            endAt={'2024-10-17 09:30:00'}
             onTimeUp={() => console.log(t('countdown.eventStarted'))}
           />
         </Box>
